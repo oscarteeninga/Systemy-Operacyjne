@@ -1,0 +1,6 @@
+Dla malych rekordow funkcje systemowe sa wolniejsza,
+a dla duzych rekordow funkcje bilbioteczne staja sie
+duzo wolniejsze.
+
+Jednakze dla systemu MacOS zawsze szybsze dla sortowania
+sa systemowe. Dla kopiowania podobnie co na Fedorze 29.

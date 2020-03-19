@@ -1,0 +1,199 @@
+====================make main====================
+rm main filter* satout*
+gcc -Wall -pthread main.c -o main -lpthread
+=================================================
+
+====================filter gen====================
+Filter generated
+Filter generated
+Filter generated
+==================================================
+
+====================block test====================
+
+------------------filter 1 (4x4)------------------
+
+1 THREAD
+Thread 0, TID: 209047552, time: 108515 us
+PID: 4314, Total time: 108622
+
+2 THREADS
+Thread 0, TID: 77651968, time: 75441 us
+Thread 1, TID: 78188544, time: 76108 us
+PID: 4315, Total time: 76184
+
+4 THREADS
+Thread 0, TID: 102686720, time: 39724 us
+Thread 1, TID: 103223296, time: 39302 us
+Thread 2, TID: 103759872, time: 39949 us
+Thread 3, TID: 104296448, time: 39409 us
+PID: 4316, Total time: 40139
+
+8 THREADS
+Thread 0, TID: 63913984, time: 38041 us
+Thread 1, TID: 64450560, time: 32652 us
+Thread 2, TID: 64987136, time: 27116 us
+Thread 3, TID: 65523712, time: 29718 us
+Thread 4, TID: 66060288, time: 29429 us
+Thread 5, TID: 66596864, time: 32706 us
+Thread 6, TID: 67133440, time: 29191 us
+Thread 7, TID: 67670016, time: 29021 us
+PID: 4317, Total time: 41790
+--------------------------------------------------
+
+-----------------filter 2 (16x16)-----------------
+
+1 THREAD
+Thread 0, TID: 73842688, time: 1827405 us
+PID: 4318, Total time: 1827520
+
+2 THREADS
+Thread 0, TID: 37281792, time: 941656 us
+Thread 1, TID: 37818368, time: 940374 us
+PID: 4323, Total time: 941735
+
+4 THREADS
+Thread 0, TID: 51634176, time: 616494 us
+Thread 1, TID: 52170752, time: 620623 us
+Thread 2, TID: 52707328, time: 619109 us
+Thread 3, TID: 53243904, time: 622882 us
+PID: 4324, Total time: 624626
+
+8 THREADS
+Thread 0, TID: 142307328, time: 516486 us
+Thread 1, TID: 142843904, time: 519168 us
+Thread 2, TID: 143380480, time: 514071 us
+Thread 3, TID: 143917056, time: 521742 us
+Thread 4, TID: 144453632, time: 513924 us
+Thread 5, TID: 144990208, time: 510652 us
+Thread 6, TID: 145526784, time: 509093 us
+Thread 7, TID: 146063360, time: 497340 us
+PID: 4325, Total time: 624582
+--------------------------------------------------
+
+-----------------filter 3 (64x64)-----------------
+
+1 THREAD
+Thread 0, TID: 179040256, time: 6945099 us
+PID: 4326, Total time: 6945228
+
+2 THREADS
+Thread 0, TID: 168431616, time: 3469136 us
+Thread 1, TID: 168968192, time: 3467353 us
+PID: 4327, Total time: 3469224
+
+4 THREADS
+Thread 0, TID: 1671168, time: 2440312 us
+Thread 1, TID: 2207744, time: 2440084 us
+Thread 2, TID: 2744320, time: 2443740 us
+Thread 3, TID: 3280896, time: 2455198 us
+PID: 4328, Total time: 2455306
+
+8 THREADS
+Thread 0, TID: 139833344, time: 2415413 us
+Thread 1, TID: 140369920, time: 2411575 us
+Thread 2, TID: 140906496, time: 2391913 us
+Thread 3, TID: 141443072, time: 2398330 us
+Thread 4, TID: 141979648, time: 2388138 us
+Thread 5, TID: 142516224, time: 2386294 us
+Thread 6, TID: 143052800, time: 2379841 us
+Thread 7, TID: 143589376, time: 2385511 us
+PID: 4329, Total time: 2528051
+--------------------------------------------------
+
+==================================================
+
+
+=================intervaled test==================
+
+------------------filter 1 (4x4)------------------
+
+1 THREAD
+Thread 0, TID: 213102592, time: 111154 us
+PID: 4330, Total time: 111275
+
+2 THREADS
+Thread 0, TID: 23396352, time: 62811 us
+Thread 1, TID: 23932928, time: 64611 us
+PID: 4331, Total time: 64684
+
+4 THREADS
+Thread 0, TID: 207769600, time: 41530 us
+Thread 1, TID: 208306176, time: 40704 us
+Thread 2, TID: 208842752, time: 40849 us
+Thread 3, TID: 209379328, time: 40185 us
+PID: 4332, Total time: 41624
+
+8 THREADS
+Thread 0, TID: 26329088, time: 29891 us
+Thread 1, TID: 26865664, time: 29989 us
+Thread 2, TID: 27402240, time: 32049 us
+Thread 3, TID: 27938816, time: 39758 us
+Thread 4, TID: 28475392, time: 31556 us
+Thread 5, TID: 29011968, time: 30424 us
+Thread 6, TID: 29548544, time: 30603 us
+Thread 7, TID: 30085120, time: 30994 us
+PID: 4333, Total time: 43361
+--------------------------------------------------
+
+-----------------filter 2 (16x16)-----------------
+
+1 THREAD
+Thread 0, TID: 164376576, time: 1913184 us
+PID: 4334, Total time: 1913291
+
+2 THREADS
+Thread 0, TID: 29999104, time: 984700 us
+Thread 1, TID: 30535680, time: 985422 us
+PID: 4335, Total time: 985498
+
+4 THREADS
+Thread 0, TID: 147623936, time: 683791 us
+Thread 1, TID: 148160512, time: 685003 us
+Thread 2, TID: 148697088, time: 683081 us
+Thread 3, TID: 149233664, time: 686130 us
+PID: 4336, Total time: 686263
+
+8 THREADS
+Thread 0, TID: 115994624, time: 615947 us
+Thread 1, TID: 116531200, time: 625282 us
+Thread 2, TID: 117067776, time: 629196 us
+Thread 3, TID: 117604352, time: 634182 us
+Thread 4, TID: 118140928, time: 629354 us
+Thread 5, TID: 118677504, time: 620029 us
+Thread 6, TID: 119214080, time: 605142 us
+Thread 7, TID: 119750656, time: 622602 us
+PID: 4337, Total time: 637288
+--------------------------------------------------
+
+-----------------filter 3 (64x64)-----------------
+
+1 THREAD
+Thread 0, TID: 252866560, time: 7081070 us
+PID: 4338, Total time: 7081195
+
+2 THREADS
+Thread 0, TID: 15224832, time: 4009282 us
+Thread 1, TID: 15761408, time: 4014810 us
+PID: 4339, Total time: 4014877
+
+4 THREADS
+Thread 0, TID: 260370432, time: 3197496 us
+Thread 1, TID: 260907008, time: 3221831 us
+Thread 2, TID: 261443584, time: 3217880 us
+Thread 3, TID: 261980160, time: 3145918 us
+PID: 4341, Total time: 3221923
+
+8 THREADS
+Thread 0, TID: 215810048, time: 3112615 us
+Thread 1, TID: 216346624, time: 3142539 us
+Thread 2, TID: 216883200, time: 3124160 us
+Thread 3, TID: 217419776, time: 3136962 us
+Thread 4, TID: 217956352, time: 3132621 us
+Thread 5, TID: 218492928, time: 3124342 us
+Thread 6, TID: 219029504, time: 3140202 us
+Thread 7, TID: 219566080, time: 3137312 us
+PID: 4342, Total time: 3150526
+--------------------------------------------------
+
+==================================================

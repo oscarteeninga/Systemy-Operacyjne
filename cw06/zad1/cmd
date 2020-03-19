@@ -1,0 +1,10 @@
+echo wiadomosc
+friends 0 2 3
+del 0
+del 3
+add 1
+2friends wiadomosc 
+2all wiadomosc
+2one 0 wiadomosc
+2one 1 wiadomosc
+list
